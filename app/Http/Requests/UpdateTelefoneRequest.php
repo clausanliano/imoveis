@@ -16,6 +16,7 @@ class UpdateTelefoneRequest extends FormRequest
         return [
             'numero' => 'string|required|min:8|max:8|unique:telefones,numero,'.$this->route('telefone.id'),
             'imovel_id' => 'required|exists:imoveis,id',
+            'observacao'  => 'string|nullable',
         ];
     }
 }

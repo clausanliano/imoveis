@@ -15,6 +15,13 @@ class UpdateImovelRequest extends FormRequest
     {
         return [
             'nome' => 'string|required|min:3|unique:imoveis,nome,'.$this->route('imovel.id'),
+            'tipo_logradouro' => 'string|nullable',
+            'logradouro' => 'string|required',
+            'numero' => 'string|nullable',
+            'bairro' => 'string|nullable',
+            'CEP' => 'string|required',
+            'municipio' => 'string|required',
+            'observacao'  => 'string|nullable',
         ];
     }
 }

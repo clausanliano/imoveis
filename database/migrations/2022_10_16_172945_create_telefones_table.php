@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('numero')->unique();
             $table->foreignId('imovel_id')->constrained('imoveis','id');
+            $table->text('observacao')->nullable();
             $table->timestamps();
         });
     }

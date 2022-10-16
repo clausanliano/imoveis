@@ -11,6 +11,12 @@ class Imovel extends Model
 
     protected $table = 'imoveis';
 
-    protected $fillable = ['nome'];
+    protected $fillable = ['nome', 'tipo_logradouro', 'logradouro', 'numero', 'bairro', 'CEP', 'municipio', 'observacao'];
+
+
+    public function endereco()
+    {
+        return $this->tipo_logradouro.' '.$this->logradouro.' '.$this->numero;
+    }
 
 }

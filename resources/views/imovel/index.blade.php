@@ -17,6 +17,9 @@
                 <thead>
                     <tr>
                         <th>Nome</th>
+                        <th>Endereço</th>
+                        <th>Bairro</th>
+                        <th>Município</th>
                         <th style="width: 17em" >Ações</th>
                     </tr>
                 </thead>
@@ -24,6 +27,9 @@
                     @forelse ($lista as $item)
                         <tr>
                             <td>{{ $item->nome }}</td>
+                            <td>{{ $item->endereco() }}</td>
+                            <td>{{ $item->bairro }}</td>
+                            <td>{{ $item->municipio }}</td>
                             <td >
                                 <div class="form-inline">
                                 <a class="btn btn-outline-primary mx-2" href="{{ route('imovel.show', $item )}}">Mostrar</a>

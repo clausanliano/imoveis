@@ -46,6 +46,22 @@
                             <div class="badge badge-danger">{{ $message }}</div>
                         @enderror
                     </div>
+
+
+
+                    <div class="form-group">
+                        <label for="observacao">Observação</label>
+                        <textarea name="observacao" id="observacao" cols="30" rows="10"
+                        class="form-control @error('observacao') is-invalid @enderror"
+                        >{{ old('observacao', $objeto->observacao )}}</textarea>
+                        @error('observacao')
+                            <div class="badge badge-danger">{{ $message }}</div>
+                        @enderror
+                    </div>
+
+
+
+
                 </div>
 
                 <div class="card-footer">

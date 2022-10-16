@@ -11,7 +11,15 @@ return new class extends Migration
         Schema::create('imoveis', function (Blueprint $table) {
             $table->id();
             $table->string('nome');
+            $table->string('tipo_logradouro')->nullable();
+            $table->string('logradouro');
+            $table->string('numero')->nullable();
+            $table->string('bairro')->nullable();
+            $table->string('CEP');
+            $table->string('municipio');
+            $table->text('observacao')->nullable();
             $table->timestamps();
+
         });
     }
 
