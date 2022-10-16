@@ -290,6 +290,7 @@ return [
     */
 
     'menu' => [
+        /*
         // Navbar items:
         [
             'type'         => 'navbar-search',
@@ -318,6 +319,7 @@ return [
             'label'       => 4,
             'label_color' => 'success',
         ],
+        */
         ['header' => 'Cadastros'],
         [
             'text' => 'Imóvel',
@@ -331,7 +333,7 @@ return [
             'icon' => 'fas fa-fw fa-phone',
         ],
 
-
+        /*
         ['header' => 'account_settings'],
         [
             'text' => 'profile',
@@ -397,6 +399,7 @@ return [
             'icon_color' => 'cyan',
             'url'        => '#',
         ],
+        */
     ],
 
     /*

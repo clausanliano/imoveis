@@ -17,6 +17,7 @@ class StoreTelefoneRequest extends FormRequest
             'numero' => 'string|required|min:8|max:8|unique:telefones',
             'imovel_id' => 'required|exists:imoveis,id',
             'observacao'  => 'string|nullable',
+            'sala'  => 'string|nullable',
         ];
     }
 }

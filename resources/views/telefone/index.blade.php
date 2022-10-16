@@ -18,6 +18,8 @@
                     <tr>
                         <th>Número</th>
                         <th>Imóvel</th>
+                        <th>Sala</th>
+                        <th>Município</th>
                         <th style="width: 17em" >Ações</th>
                     </tr>
                 </thead>
@@ -26,6 +28,8 @@
                         <tr>
                             <td>{{ $item->numero }}</td>
                             <td>{{ $item->imovel->nome }}</td>
+                            <td>{{ $item->sala }}</td>
+                            <td>{{ $item->imovel->municipio }}</td>
                             <td >
                                 <div class="form-inline">
                                 <a class="btn btn-outline-primary mx-2" href="{{ route('telefone.show', $item )}}">Mostrar</a>
@@ -67,7 +71,7 @@
                     {
                         searchable: false,
                         orderable: false,
-                        targets: [2]
+                        targets: [4]
                     },
                 ],
             });

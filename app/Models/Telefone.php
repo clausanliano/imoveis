@@ -11,7 +11,7 @@ class Telefone extends Model
 
     protected $table = 'telefones';
 
-    protected $fillable = ['numero', 'imovel_id', 'observacao'];
+    protected $fillable = ['numero', 'imovel_id', 'sala', 'observacao'];
 
 
     public function imovel()

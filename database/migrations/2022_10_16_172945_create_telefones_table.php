@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('telefones', function (Blueprint $table) {
             $table->id();
             $table->string('numero')->unique();
+            $table->string('sala')->nullable();
             $table->foreignId('imovel_id')->constrained('imoveis','id');
             $table->text('observacao')->nullable();
             $table->timestamps();

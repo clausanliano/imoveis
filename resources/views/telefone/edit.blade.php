@@ -35,7 +35,7 @@
                         >
                             <option value="0"> - - Selecione uma opção - - </option>
                             @foreach ($imoveis as $item)
-                                @if (old('imovel_id', $objeto->imovel_id))
+                                @if (old('imovel_id', $objeto->imovel_id) == $item->id)
                                     <option value="{{ $item->id}}" selected>{{ $item->nome}}</option>
                                @else
                                     <option value="{{ $item->id}}">{{ $item->nome}}</option>
@@ -47,6 +47,16 @@
                         @enderror
                     </div>
 
+
+                    <div class="form-group ">
+                        <label for="sala">Sala</label>
+                        <input type="text" name="sala" id="sala" value="{{ old('sala', $objeto->sala )}}"
+                            class="form-control @error('sala') is-invalid @enderror"
+                        >
+                        @error('sala')
+                            <div class="badge badge-danger">{{ $message }}</div>
+                        @enderror
+                    </div>
 
 
                     <div class="form-group">
