@@ -318,6 +318,14 @@ return [
             'label'       => 4,
             'label_color' => 'success',
         ],
+        ['header' => 'Cadastros'],
+        [
+            'text' => 'Imóvel',
+            'url'  => 'imovel',
+            'icon' => 'fas fa-fw fa-university',
+        ],
+
+
         ['header' => 'account_settings'],
         [
             'text' => 'profile',
