@@ -8,7 +8,6 @@ use App\Http\Requests\UpdateImovelRequest;
 
 class ImovelController extends Controller
 {
-
     public function index()
     {
         $lista = Imovel::all();

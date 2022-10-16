@@ -325,6 +325,12 @@ return [
             'icon' => 'fas fa-fw fa-university',
         ],
 
+        [
+            'text' => 'Telefone',
+            'url'  => 'telefone',
+            'icon' => 'fas fa-fw fa-phone',
+        ],
+
 
         ['header' => 'account_settings'],
         [

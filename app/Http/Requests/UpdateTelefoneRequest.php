@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class UpdateImovelRequest extends FormRequest
+class UpdateTelefoneRequest extends FormRequest
 {
     public function authorize()
     {
@@ -14,7 +14,9 @@ class UpdateImovelRequest extends FormRequest
     public function rules()
     {
         return [
-            'nome' => 'string|required|min:3|unique:imoveis,nome,'.$this->route('imovel.id'),
+            'numero' => 'string|required|min:8|max:8|unique:telefones,numero,'.$this->route('telefone.id'),
+            'imovel_id' => 'required|exists:imoveis,id',
         ];
     }
 }
+
