@@ -333,6 +333,11 @@ return [
             'icon' => 'fas fa-fw fa-phone',
         ],
 
+        [
+            'text' => 'OPM',
+            'url'  => 'opm',
+            'icon' => 'fas fa-fw fa-university',
+        ],
         /*
         ['header' => 'account_settings'],
         [

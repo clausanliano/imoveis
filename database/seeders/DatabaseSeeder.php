@@ -36,6 +36,7 @@ class DatabaseSeeder extends Seeder
 */
         $this->call([
             TelefoneSeeder::class,
+            OpmSeeder::class,
 
         ]);
 
